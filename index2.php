@@ -9,16 +9,8 @@
 <style>
 div.minH{
     min-height: 400px;
-
 }
 
-
-div.m{
-    background : skyblue;
-    border: 2px solid blue;
-    border-radius: 25px;
-
-}
 </style>
 </head>
 <body>
@@ -42,7 +34,7 @@ $cnt_array=Array(
     
     
     Array("Name","text",""),
-    /*Array("FatherName","text",""),
+    Array("FatherName","text",""),
     Array("DOB","date",""),
     Array("Mobile","number",""),
     Array("EnailID","email",""),
@@ -52,7 +44,7 @@ $cnt_array=Array(
     Array("Image","file",""),
     Array("Resume","file",""),
     Array("Dis_Qualified Reason","text",""),
-    Array("Status","text",""),*/
+    Array("Status","text",""),
 );
 
 $flag=false;
@@ -62,12 +54,13 @@ for($i=0;$i<count($cnt_array);$i++)
 {
     $cnt_label=$cnt_array[$i][0];
     $cnt_type=$cnt_array[$i][1];
+    $cnt_val = "cnt_val".$i;
 if($flag)
     echo "<div class='row'>";
     echo "
     <label class='col-md-3'>$cnt_label</label>
 <div class='col-md-3'>
-<input class='form-control' name='username' type='$cnt_type'/>
+<input class='form-control' name='$cnt_val' type='$cnt_type'/>
 </div>
 
 ";
@@ -78,6 +71,9 @@ $flag=false;
 }else
 $flag=true;
 }
+
+$count = $i;
+echo "<input type='hidden' value='$count' name='cnt_length'/>"
 
     ?>
 </div>
@@ -93,17 +89,14 @@ $flag=true;
             <div class="panel-body">
     
      <?php
-$cnt_array2=Array(
-    
- /*   
-    Array("id","number",""),
-    Array("Postid","number",""),
-    Array("Degree Level","text",""),
-    Array("Degree","text",""),
-    Array("Compulsory","text",""),
-    Array("percentage Required","text",""),
-    Array("Experience in Months","number",""),
-*/
+$cnt_array2=Array(  
+    // Array("id","number",""),
+    // Array("Postid","number",""),
+    // Array("Degree Level","text",""),
+    // Array("Degree","text",""),
+    // Array("Compulsory","text",""),
+    // Array("percentage Required","text",""),
+    // Array("Experience in Months","number",""),
 );
 
 $flag=false;
