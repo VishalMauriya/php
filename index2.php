@@ -90,13 +90,13 @@ echo "<input type='hidden' value='$count' name='cnt_length'/>"
     
      <?php
 $cnt_array2=Array(  
-    // Array("id","number",""),
-    // Array("Postid","number",""),
-    // Array("Degree Level","text",""),
-    // Array("Degree","text",""),
-    // Array("Compulsory","text",""),
-    // Array("percentage Required","text",""),
-    // Array("Experience in Months","number",""),
+    Array("id","number",""),
+    Array("Postid","number",""),
+    Array("Degree Level","text",""),
+    Array("Degree","text",""),
+    Array("Compulsory","text",""),
+    Array("percentage Required","text",""),
+    Array("Experience in Months","number",""),
 );
 
 $flag=false;

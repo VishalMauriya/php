@@ -13,7 +13,7 @@ for($i = 0; $i<$cnt_len; $i++){
 }
 exit;
 
-$sql="insert into empinfo(empname) values('$user_name')";
+$sql="insert into empinfodetail(empName) values('$user_name')";
 //echo $sql;
 if(mysqli_query($con,$sql))
 {
